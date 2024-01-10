@@ -36,6 +36,7 @@
 ### foreach
 
 `C#`
+**Keywords:** _foreach, in_
 ```
 string[] names = {"A", "B", "C"};
 foreach(string name in names)
