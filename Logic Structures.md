@@ -1,6 +1,6 @@
 # Logic Structures
 
-**Keywords:** _sequential, conditional, iteration_
+**Keywords:** _sequential, conditional, iteration_   
 **Languages:**
 
 <details>
@@ -16,7 +16,7 @@
 <details>
   <summary> Conditional </summary>   
  
-  **Keywords:** _if, else, else if, selection_   
+  **Keywords:** _if, else, else if, selection_    
   **Description:**   
   **Examples:**   
   **Remarks:**   
@@ -26,7 +26,7 @@
 <details>
   <summary> Iteration </summary>   
  
-  **Keywords:** _for, while, loop, repetition_
+  **Keywords:** _for, while, loop, repetition_   
   **Description:**   
   **Examples:**   
   **Remarks:**   
