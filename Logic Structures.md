@@ -32,3 +32,23 @@
   **Remarks:**   
   
 </details>
+
+### foreach
+
+`C#`
+```
+string[] names = {"A", "B", "C"};
+foreach(string name in names)
+{
+  Console.WriteLine(name);
+}
+```
+
+Output:
+```
+A
+B
+C
+```
+
+### 
