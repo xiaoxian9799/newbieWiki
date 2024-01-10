@@ -3,42 +3,42 @@
 **Languages:** C++, C#, Perl, Python
 
 <details> 
-<summary> Encapsulation </summary>
-
-**Keywords:**     
-**Description:**     
-**Examples:**     
-**Remarks:**   
-
-</details>
-
-<details> 
-<summary> Inheritance </summary>
-
-**Keywords:**     
-**Description:**     
-**Examples:**     
-**Remarks:**   
+  <summary> Encapsulation </summary>
+  
+  **Keywords:**     
+  **Description:**     
+  **Examples:**     
+  **Remarks:**   
 
 </details>
 
 <details> 
-<summary> Polymorphism </summary>
-
-**Keywords:**     
-**Description:**     
-**Examples:**     
-**Remarks:**   
+  <summary> Inheritance </summary>
+  
+  **Keywords:**     
+  **Description:**     
+  **Examples:**     
+  **Remarks:**   
 
 </details>
 
 <details> 
-<summary> Abstraction </summary>
+  <summary> Polymorphism </summary>
+  
+  **Keywords:**     
+  **Description:**     
+  **Examples:**     
+  **Remarks:**   
 
-**Keywords:**     
-**Description:**     
-**Examples:**     
-**Remarks:**   
+</details>
+
+<details> 
+  <summary> Abstraction </summary>
+  
+  **Keywords:**     
+  **Description:**     
+  **Examples:**     
+  **Remarks:**   
 
 </details>
 
