@@ -35,7 +35,7 @@
 
 ### foreach
 
-`C#`
+`C#`    
 **Keywords:** _foreach, in_
 ```
 string[] names = {"A", "B", "C"};
