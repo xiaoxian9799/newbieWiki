@@ -77,7 +77,7 @@
  
   **Keywords:** _for, while, foreach, loop, repetition_   
   **Description:**   
-  - The `for` statement iterates through a code block a specific number of times.
+  - The `for` statement iterates through a code block a specific number of times. (initializer, condition, iterator)
   - The `while` statement iterates through a block of code until a condition is met.
   - The `foreach` statement iterates through a block of code once for each item in a sequence of data like an array or collection.
   
