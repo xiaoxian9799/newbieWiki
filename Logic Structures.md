@@ -75,30 +75,40 @@
 <details>
   <summary> Iteration </summary>   
  
-  **Keywords:** _for, while, loop, repetition_   
+  **Keywords:** _for, while, foreach, loop, repetition_   
   **Description:**   
+  - The `for` statement iterates through a code block a specific number of times.
+  - The `while` statement iterates through a block of code until a condition is met.
+  - The `foreach` statement iterates through a block of code once for each item in a sequence of data like an array or collection.
+  
   **Examples:**   
   **Remarks:**   
+
+  ```
+  C#
+
+  string[] names = {"A", "B", "C"};
+
+  for(int i = 0; i < names.Length; i++)
+  {
+    Console.WriteLine(names[i]);
+  }
+
+  foreach(string name in names)
+  {
+    Console.WriteLine(name);
+  }
+  ```
+  
+  Output:
+  ```
+  A
+  B
+  C
+  ```
   
 </details>
 
-### foreach
 
-`C#`    
-**Keywords:** _foreach, in_
-```
-string[] names = {"A", "B", "C"};
-foreach(string name in names)
-{
-  Console.WriteLine(name);
-}
-```
-
-Output:
-```
-A
-B
-C
-```
 
 ### 
