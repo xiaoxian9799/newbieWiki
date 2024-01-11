@@ -81,8 +81,7 @@
   - The `while` statement iterates through a block of code until a condition is met.
   - The `foreach` statement iterates through a block of code once for each item in a sequence of data like an array or collection.
   
-  **Examples:**   
-  **Remarks:**   
+  **Examples:**    
 
   ```
   C#
@@ -109,6 +108,6 @@
   
 </details>
 
-
+**Remarks:**  
 
 ### 
