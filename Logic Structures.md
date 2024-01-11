@@ -105,9 +105,9 @@
   B
   C
   ```
-  
-</details>
 
-**Remarks:**  
+  **Remarks:**     
+
+</details>
 
 ### 
