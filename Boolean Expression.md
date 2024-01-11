@@ -5,7 +5,7 @@ Logical Negation: `!`
 
 > [!NOTE]
 > **Inequality Operator vs Logical Negation**    
-> != is not an example of logical negation.
+> `!=` is not an example of logical negation.
 
 | Operators | Description | Operators | Description |
 | :---: | --- | :---: | --- |
