@@ -75,11 +75,14 @@
 <details>
   <summary> Iteration </summary>   
  
-  **Keywords:** _for, while, foreach, loop, repetition_   
+  **Keywords:** _for, foreach, do-while, while, loop, repetition_   
   **Description:**   
   - The `for` statement iterates through a code block a specific number of times. (initializer, condition, iterator)
   - The `while` statement iterates through a block of code until a condition is met.
   - The `foreach` statement iterates through a block of code once for each item in a sequence of data like an array or collection.
+
+  - A `do-while` statement executes a code block at least once.
+  - A `while` statement executes a code block zero or more times.
   
   **Examples:**    
 
@@ -110,4 +113,7 @@
 
 </details>
 
-### 
+### Continue & Break
+
+- `continue` statement transfers execution to the end of the current iteration.
+- `break` statement terminates the iteration (or `switch`) and transfers control to the statement that follows the terminated statement.
