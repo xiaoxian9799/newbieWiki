@@ -31,3 +31,8 @@ Hello World!
 - Methods that help you determine what's inside of a string, or even retrieve just a part of the string (Contains(), StartsWith(), EndsWith(), Substring())
 - Methods that change the content of the string by replacing, inserting, or removing parts (Replace(), Insert(), Remove())
 - Methods that turn a string into an array of strings or characters (Split(), ToCharArray())
+
+- `IndexOf( )` : string_name.IndexOf(char_or_str), returns `-1` if it can't find a match
+- `Substring( )` : string_name.Substring(start_position, optional_length)
+- `IndexOfAny( )` : string_name.IndexOfAny(array_name, optional_start_position), returns the first position of an array of char that occurs inside of another string
+- `LastIndexOf( )` : string_name.IndexOf(char_or_str), returns the last position of a character or string inside of another string
