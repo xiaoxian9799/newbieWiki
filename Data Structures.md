@@ -40,6 +40,8 @@
   orderIDs.Length
   ```
 
+</details>
+
 | Array Methods || C# |
 | --- | --- | --- |
 | Sort( ) || Array.Sort(array_name); |
@@ -51,7 +53,5 @@
 
 > [!NOTE]
 > null = a value that indicates a variable points to nothing in memory.
-
-</details>
 
 ## Stack
