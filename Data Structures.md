@@ -40,6 +40,18 @@
   orderIDs.Length
   ```
 
+| Array Methods || C# |
+| --- | --- | --- |
+| Sort( ) || Array.Sort(array_name); |
+| Reverse( ) || Array.Reverse(array_name); |
+| Clear( ) | Removes the contents of specific elements in your array and replace it with the array default value (`string` = `null`; `int` = `0`) | Array.Clear(array_name, index, length);
+| Resize( ) | Adds or removes elements from your array. | Array.Resize(`ref` array_name, length) |
+| Split( ) | | string_name.ToCharArray( ) or string_name.Split(',') |
+| Join( ) || String.Join("-", array_name) |
+
+> [!NOTE]
+> null = a value that indicates a variable points to nothing in memory.
+
 </details>
 
 ## Stack
