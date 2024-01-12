@@ -5,6 +5,7 @@
 | Data Types | Value Types | Reference Types |
 | --- | --- | --- |
 | Memory Storage Area | Stack | Heap |
+| Memory Storage Size | Smaller values | Larger values |
 
 | Value Types |
 | --- |
@@ -15,8 +16,8 @@
 | `float` |
 | `double` |
 
-| Reference Types |
-| --- |
-| Arrays | data_type[ ] array_name = `new` data_type[num_of_element] |
-| Classes |
-| String |
+| Reference Types | |
+| --- | --- |
+| Arrays | data_type[ ] array_name = `new` data_type[num_of_elements]; |
+| Classes ||
+| String | `string` string_name = " "; |
