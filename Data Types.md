@@ -9,6 +9,7 @@ Bit = 0 or 1
 
 | Data Types | Value Types | Reference Types |
 | --- | --- | --- |
+| | Store the value directly | Store an address where the value is being stored |
 | Memory Storage Area | Stack | Heap |
 | Memory Storage Size | Smaller values | Larger values |
 
