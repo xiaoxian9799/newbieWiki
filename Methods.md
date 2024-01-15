@@ -59,3 +59,5 @@ Global variables
 
 - Named arguments allow you to specify the value for a parameter using its name rather than position.
 - Optional parameters allow you to omit those arguments when calling the method.
+
+A class defines a type of object, but it's not an object itself. An object is a concrete entity based on a class.
