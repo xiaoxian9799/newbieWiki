@@ -2,7 +2,7 @@
 aka Functions
 
 - [Declaring a method](https://github.com/xiaoxian9799/newbieWiki/blob/main/Methods.md#declaring-a-method)
-- Calling a method
+- [Calling a method](https://github.com/xiaoxian9799/newbieWiki/blob/main/Methods.md#calling-a-method)
 
 ## Declaring a method
 ```
