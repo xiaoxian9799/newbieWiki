@@ -18,7 +18,7 @@ Bit = 0 or 1
 | Value Types | |
 | --- | --- |
 | `char` |
-| `bool` | for true or false values |
+| `bool` | for `true` or `false` values |
 | `int` | for most whole numbers |
 | `decimal` | for numbers representing money. absolute precision. | 
 | `float` | 
