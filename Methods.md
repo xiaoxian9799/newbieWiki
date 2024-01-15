@@ -1,7 +1,7 @@
 # Methods
 aka Functions
 
-- [Declaring a method](https://github.com/xiaoxian9799/newbieWiki/main/Methods.md#declaring-a-method)
+- [Declaring a method](https://github.com/xiaoxian9799/newbieWiki/blob/main/Methods.md#declaring-a-method)
 - Calling a method
 
 ## Declaring a method
