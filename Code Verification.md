@@ -31,7 +31,7 @@ try
 }
 catch
 {
-  code to handle an exception
+  code to handle an exception (log it or ignore it)
 }
 finally
 {
@@ -40,3 +40,8 @@ finally
 ```
 
 `throw`
+
+## Call Stack Unwinding
+call stack
+
+Runtime Exception
