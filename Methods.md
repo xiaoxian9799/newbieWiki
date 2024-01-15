@@ -1,7 +1,10 @@
 # Methods
 aka Functions
 
-## Declaring A Method
+- [Declaring a method](https://github.com/xiaoxian9799/newbieWiki/main/Methods.md#declaring-a-method)
+- Calling a method
+
+## Declaring a method
 ```
 return_type name(input_parameters) // method signature
 {
@@ -16,7 +19,7 @@ void SayHello();
 
 `void` = the method returns no data
 
-## Calling A Method
+## Calling a method
 ```
 method_name(input_parameters);
 ```
