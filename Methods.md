@@ -6,7 +6,7 @@ aka Functions
 
 ## Declaring a method
 ```
-return_type name(input_parameters) // method signature
+return_type name(input_data_type input_parameters, ...) // method signature
 {
   method_definition
 };
@@ -24,8 +24,19 @@ void SayHello();
 method_name(input_parameters);
 ```
 
+- `parameter` = the variable in the method signature
+- `argument` = the value passed when the method is called
+
+  
+
 > [!NOTE]
 > C#    
 > A method can be called before or after its definition.
 
 `return` terminates execution of its method and returns control to the caller.
+
+## Method Scope
+Scope is the region of a program where certain data is accessible.
+
+Global variables
+
