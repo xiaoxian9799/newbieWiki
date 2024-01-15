@@ -10,6 +10,11 @@ return_type name(input_data_type input_parameters, ...) // method signature
 {
   method_definition
 };
+
+return_type name(input_data_type input_parameters = default_value, ...) // method signature with optional parameter declared
+{
+  method_definition
+};
 ```
 
 Example:
@@ -21,7 +26,7 @@ void SayHello();
 
 ## Calling a method
 ```
-method_name(input_parameters);
+method_name(input_parameters: argument_value, ...);
 ```
 
 - [ ] Parameter vs Argument
@@ -34,7 +39,7 @@ method_name(input_parameters);
 > C#    
 > A method can be called before or after its definition.
 
-`return` terminates execution of its method and returns control to the caller.
+`return` terminates execution of its method and returns control to the caller or return the result.
 
 ## Method Scope
 Scope is the region of a program where certain data is accessible.
@@ -48,7 +53,7 @@ Global variables
 
 > [!NOTE]
 > C#    
-> Although `string` is a reference type, but it is _immutable_ (once it has been assigned a value, it can't be altered).
+> Although `string` is a reference type, but it is _immutable_ (it can't be altered once it has been assigned a value).
 > When methods and operators are used to modify a string, the result that is returned is actually a new string object.
 
 
