@@ -25,6 +25,15 @@ _debugging_
 _module_  
 
 ## 01 - Python Basics
+_Expressions_ are formed by putting _values_ and _operators_ together, and they always _evaluate_ down to a single value.    
+A _data type_ is a category for values, examples: _int_, _float_, and _str_.
+
+`SyntaxError: EOL while scanning string literal` means you probably forgot the final single quote character at the end of the string.
+
+| Operator | Numeric Value | String |
+| :---: | --- | --- |
+| + | Addition | String concatenation |
+| * | Multiplication | String replication |
 
 ## 02 - Flow Control
 
