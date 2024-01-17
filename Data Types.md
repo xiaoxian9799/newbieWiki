@@ -51,7 +51,7 @@ Example `decimal` --> `int` or `decimal` --> `float`
 `TryParse( )` : `string` --> `int`    
 `Convert.ToInt32( )` : `decimal` --> `int` // rounds up or down
 
-```
+```C++
 string value = "99";
 int result = 0;
 if(int.TryParse(value, out result)) // return type = `bool`
