@@ -20,7 +20,7 @@
   **Description:**   
   **Examples:**   
 
-  ```
+  ```C#
   C#
 
   int employeeLevel = 100;
@@ -44,7 +44,7 @@
   ```
   
 
-  ```
+  ```C#
   C#
 
   int employeeLevel = 100;
@@ -86,7 +86,7 @@
   
   **Examples:**    
 
-  ```
+  ```C#
   C#
 
   string[] names = {"A", "B", "C"};
