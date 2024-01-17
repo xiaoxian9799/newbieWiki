@@ -12,8 +12,20 @@ Reference: https://automatetheboringstuff.com/
 - [ ] [06 - Manipulating Strings]
 
 **Part II: Automating Tasks**    
-[07 - Pattern Matching with RegEx]    
-[08 - Input Validation]    
+- [ ] [07 - Pattern Matching with RegEx]    
+- [ ] [08 - Input Validation]    
+- [ ] [09 - Reading and Writing Files]
+- [ ] [10 - Organizing Files]
+- [ ] [11 - Debugging]
+- [ ] [12 - Web Scraping]
+- [ ] [13 - Working with Excel Spreadsheets]
+- [ ] [14 - Working with Google Spreadsheets]
+- [ ] [15 - Working with PDF and Word Documents]
+- [ ] [16 - Working with CSV Files and JSON Data]
+- [ ] [17 - Keeping Time, Scheduling Tasks, and Launching Programs]
+- [ ] [18 - Sending Email and Text Messages]
+- [ ] [19 - Manipulating Images]
+- [ ] [20 - Controlling the Keyboard and Mouse with GUI Automation]
 
 ## Introduction <!-- 20240117 -->
 - Examples of _operating system_: Microsoft Windows, Linux OS, Apple macOS, Apple iOS, Google's Android OS   
@@ -161,3 +173,18 @@ Errors can be handled with `try` and `except` statements.
 
 ## 05 - Dictionaries and Structuring Data
 
+## 06 - Manipulating Strings
+## 07 - Pattern Matching with RegEx  
+## 08 - Input Validation    
+## 09 - Reading and Writing Files
+## 10 - Organizing Files
+## 11 - Debugging
+## 12 - Web Scraping
+## 13 - Working with Excel Spreadsheets
+## 14 - Working with Google Spreadsheets
+## 15 - Working with PDF and Word Documents
+## 16 - Working with CSV Files and JSON Data
+## 17 - Keeping Time, Scheduling Tasks, and Launching Programs
+## 18 - Sending Email and Text Messages
+## 19 - Manipulating Images
+## 20 - Controlling the Keyboard and Mouse with GUI Automation
