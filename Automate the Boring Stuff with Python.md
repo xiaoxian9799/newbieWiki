@@ -25,8 +25,18 @@ _debugging_
 _module_  
 
 ## 01 - Python Basics <!-- 20240117 -->
-_Expressions_ are formed by putting _values_ and _operators_ together, and they always _evaluate_ down to a single value.    
-A _data type_ is a category for values, examples: _int_, _float_, and _str_.
+- _Expressions_ are formed by putting _values_ and _operators_ together, and they always _evaluate_ down to a single value.    
+- A _data type_ is a category for values, examples: _int_, _float_, _str_, and _Boolean_.
+- A _variable_ is _initialized or created_ the first time a value is stored in it. The variable can be _overwritten_ when it is assigned a new value.
+  
+- The Python program _terminates or exits_ when there are no more lines of code to execute. CTRL-C is handy if you want to simply terminate your program immediately. The Python program _crash_ (the program stopped running unexpectedly) if they contain code the computer can't understand, which will cause Python to show an error message.
+  
+- Python is _calling_ the `print() ` function and the _argument_ (i.e. string value) is being _passed_ to the function.
+- The `input()` function waits for the user to type some text on the keyboard and press ENTER.
+- The `len()` function evaluates to the integer value of the number of characters in a string.
+  
+- The `str()`, `int()`, and `float()` functions evaluate to the string, integer, and floating-point forms of the value you pass, respectively.
+- An integer can be equal to a floating point. Example: `42 == 42.0`    
 
 `SyntaxError: EOL while scanning string literal` means you probably forgot the final single quote character at the end of the string.
 
@@ -38,10 +48,6 @@ A _data type_ is a category for values, examples: _int_, _float_, and _str_.
 _assignment statement_ `var_name = val`    
 _assignment operator_ `=`
 
-A _variable_ is _initialized or created_ the first time a value is stored in it. The variable can be _overwritten_ when it is assigned a new value.
-
-The Python program _terminates or exits_ when there are no more lines of code to execute. The Python program _crash_ (the program stopped running unexpectedly) if they contain code the computer can't understand, which will cause Python to show an error message.
-
 ### Naming Rules for Variable
 - Only one word with no spaces.
 - Only letters, numbers, and `_` char.
@@ -50,14 +56,63 @@ The Python program _terminates or exits_ when there are no more lines of code to
 - case-sensitive    
 
 _comment_ `#`   
-Python is _calling_ the `print() ` function and the _argument_ (i.e. string value) is being _passed_ to the function.     
-The `input()` function waits for the user to type some text on the keyboard and press ENTER.    
-The `len()` function evaluates to the integer value of the number of characters in a string.
-
-The `str()`, `int()`, and `float()` functions evaluate to the string, integer, and floating-point forms of the value you pass, respectively.    
-An integer can be equal to a floating point. Example: `42 == 42.0`    
 
 ## 02 - Flow Control
+flowchart    
+
+Comparison operators or relational operators
+
+| Boolean Operators | |
+| --- | --- |
+| `and` | Binary |
+| `or` | Binary |
+| `not` | Unary |
+
+> [!NOTE]
+> Precedence
+> `not` > `and` > `or`
+
+Truth table    
+
+clause
+
+- _Conditions_ are the same thing as expressions; condition is just a more specific name in the context of flow control statements. Conditions always evaluate down to a _Boolean value_, `True` or `False`.
+
+Blocks begin when the indentation increases.
+
+Flow control statements: `if`, `else`, `elif`, `while` loop, `break`, `continue`, `for` loop, 
+
+> [!NOTE]
+> The order of the `elif` statements does matter; the rest of the `elif` clauses are automatically skipped once a `True` condition has been found.
+
+```Python
+if condition:
+  clause
+elif condition:
+  clause
+else:
+  clause
+```
+
+```Python
+while condition:
+  clause
+  if condition:
+    continue     
+  if condition:
+    break
+```
+
+```Python
+for var_name in range(int):
+  clause
+  if condition:
+    continue
+  if condition:
+    break
+```
+
+iteration    
 
 ## 03 - Functions
 
