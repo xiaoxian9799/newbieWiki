@@ -5,7 +5,7 @@ Reference: https://automatetheboringstuff.com/
 **Part I: Python Programming Basics**        
 - [X] [Introduction](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#introduction)      
 - [X] [01 - Python Basics](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#01---python-basics)      
-- [ ] [02 - Flow Control](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#02---flow-control)      
+- [X] [02 - Flow Control](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#02---flow-control)      
 - [ ] [03 - Functions](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#03---functions)      
 - [ ] [04 - Lists](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)      
 - [ ] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#05---dictionaries-and-structuring-data)      
@@ -22,14 +22,25 @@ Reference: https://automatetheboringstuff.com/
 - Writing programs involves breaking down a problem into individual, detailed steps.     
   
 _debugging_    
-_module_  
+
+_built-in functions_    
+_standard library_    
+A _module_ is a Python program that contains a related group of functions that can be embedded in your programs.    
+
+```Python
+  import module_name, ...
+  module_name.func_name()
+
+  from module_name import *
+  func_name()
+```
 
 ## 01 - Python Basics <!-- 20240117 -->
 - _Expressions_ are formed by putting _values_ and _operators_ together, and they always _evaluate_ down to a single value.    
 - A _data type_ is a category for values, examples: _int_, _float_, _str_, and _Boolean_.
 - A _variable_ is _initialized or created_ the first time a value is stored in it. The variable can be _overwritten_ when it is assigned a new value.
   
-- The Python program _terminates or exits_ when there are no more lines of code to execute. CTRL-C is handy if you want to simply terminate your program immediately. The Python program _crash_ (the program stopped running unexpectedly) if they contain code the computer can't understand, which will cause Python to show an error message.
+- The Python program _terminates or exits_ when there are no more lines of code to execute. CTRL-C is handy if you want to simply terminate your program immediately or when your program is stuck in an infinite loop. The Python program _crash_ (the program stopped running unexpectedly) if they contain code the computer can't understand, which will cause Python to show an error message.
   
 - Python is _calling_ the `print() ` function and the _argument_ (i.e. string value) is being _passed_ to the function.
 - The `input()` function waits for the user to type some text on the keyboard and press ENTER.
@@ -57,7 +68,7 @@ _assignment operator_ `=`
 
 _comment_ `#`   
 
-## 02 - Flow Control
+## 02 - Flow Control <!-- 20240117 -->
 flowchart    
 
 Comparison operators or relational operators
@@ -98,13 +109,13 @@ else:
 while condition:
   clause
   if condition:
-    continue     
+    continue    # jump back to the loop's start
   if condition:
-    break
+    break    # exit a loop
 ```
 
 ```Python
-for var_name in range(int):
+for var_name in range(start_arg, stop_arg, step_arg):
   clause
   if condition:
     continue
@@ -113,6 +124,12 @@ for var_name in range(int):
 ```
 
 iteration    
+
+```Python
+import sys
+
+sys.exit()    # terminate or exit the program before the last instruction
+```
 
 ## 03 - Functions
 
