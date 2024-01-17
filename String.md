@@ -7,7 +7,7 @@
 `$` directive    
 
 Example: 
-```
+```C#
 C#
 
 string first = "Hello";
