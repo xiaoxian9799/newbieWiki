@@ -8,7 +8,7 @@
 
   <summary> C# </summary>
   
-  ```
+  ```C++
   string[] orderIDs = new string[3];  // create a new integer array with three elements
   
   orderIDs[0] = "A123";  // assign value to first element of the array
