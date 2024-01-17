@@ -6,7 +6,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] [Introduction](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#introduction)      
 - [X] [01 - Python Basics](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#01---python-basics)      
 - [X] [02 - Flow Control](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#02---flow-control)      
-- [ ] [03 - Functions](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#03---functions)      
+- [X] [03 - Functions](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#03---functions)      
 - [ ] [04 - Lists](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)      
 - [ ] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#05---dictionaries-and-structuring-data)      
 - [ ] [06 - Manipulating Strings]
@@ -132,6 +132,30 @@ sys.exit()    # terminate or exit the program before the last instruction
 ```
 
 ## 03 - Functions
+to _deduplicate_ code (getting rid of duplicated or copy-and-pasted code) to make your program shorter, easier to read, and easier to update.    
+
+```Python
+def func_name(optional_parameter_name):    # define or create a function
+  func_body
+  return return_val
+
+var_name = func_name(keyword_arg_value)    # function call
+```
+
+- _Parameters_ are variables that contain _arguments_. A value being passed to a function in a function call is an argument.
+- When a function is called with arguments, the arguments are stored in the parameters. The value stored in a parameter is forgotten when the function returns.
+
+`None` is called as `null`, `nil`, or `undefined` in other programming languages.    
+
+When your program calls a function, Python creates a _frame object_ on the top of the _call stack_. Frame objects store the line number of the original function call so that Python can remember where to return.
+
+Parameters and variables that are assigned in a called function are said to be exist in that function's _local scope_. Variables that are assigned outside all functions are said to exist in the _global scope_. A variable must be one or the other; it cannot be both local and global.
+
+### Exception Handling
+The entire program will crash when you get an error, or _exception_ in your Python program.    
+Errors can be handled with `try` and `except` statements.     
+- The code that could potentially have an error is put in a `try` clause.
+- The program execution moves to the start of a following `except` clause if an error happens.
 
 ## 04 - Lists
 
