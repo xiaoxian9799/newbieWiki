@@ -11,12 +11,12 @@ Reference: https://automatetheboringstuff.com/
 - [ ] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#05---dictionaries-and-structuring-data)      
 - [ ] [06 - Manipulating Strings]
 
-**Part II: Automating Tasks**
+**Part II: Automating Tasks**    
 [07 - Pattern Matching with RegEx]    
 [08 - Input Validation]    
 
 ## Introduction
-- Examples of operating system: Microsoft Windows, Linux OS, Apple macOS, Apple iOS, Google's Android OS   
+- Examples of _operating system_: Microsoft Windows, Linux OS, Apple macOS, Apple iOS, Google's Android OS   
 - The _interactive shell_ is good for _running or executing_ Python _instructions_ one at a time (by using _prompt_ >>>), whereas _file or text editor_ is good to write instructions for the entire Python programs.
 - Both _compiler_ and _interpreter_ translate _source code_ (that adhere to _syntax rules_) into machine code. Compiler translates code at once before the program runs, whereas interpreter translates code line-by-line as the program runs.    
 - Writing programs involves breaking down a problem into individual, detailed steps.     
