@@ -9,23 +9,23 @@ Reference: https://automatetheboringstuff.com/
 - [X] [03 - Functions](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#03---functions)      
 - [ ] [04 - Lists](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)      
 - [ ] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#05---dictionaries-and-structuring-data)      
-- [ ] [06 - Manipulating Strings]
+- [ ] [06 - Manipulating Strings](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#06---manipulating-strings)
 
 **Part II: Automating Tasks**    
-- [ ] [07 - Pattern Matching with RegEx]    
-- [ ] [08 - Input Validation]    
-- [ ] [09 - Reading and Writing Files]
-- [ ] [10 - Organizing Files]
-- [ ] [11 - Debugging]
-- [ ] [12 - Web Scraping]
-- [ ] [13 - Working with Excel Spreadsheets]
-- [ ] [14 - Working with Google Spreadsheets]
-- [ ] [15 - Working with PDF and Word Documents]
-- [ ] [16 - Working with CSV Files and JSON Data]
-- [ ] [17 - Keeping Time, Scheduling Tasks, and Launching Programs]
-- [ ] [18 - Sending Email and Text Messages]
-- [ ] [19 - Manipulating Images]
-- [ ] [20 - Controlling the Keyboard and Mouse with GUI Automation]
+- [ ] [07 - Pattern Matching with RegEx](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#07---pattern-matching-with-regex)    
+- [ ] [08 - Input Validation](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#08---input-validation)    
+- [ ] [09 - Reading and Writing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#09---reading-and-writing-files)
+- [ ] [10 - Organizing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#10---organizing-files)
+- [ ] [11 - Debugging](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#11---debugging)
+- [ ] [12 - Web Scraping](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#12---web-scraping)
+- [ ] [13 - Working with Excel Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#13---working-with-excel-spreadsheets)
+- [ ] [14 - Working with Google Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#14---working-with-google-spreadsheets)
+- [ ] [15 - Working with PDF and Word Documents](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
+- [ ] [16 - Working with CSV Files and JSON Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
+- [ ] [17 - Keeping Time, Scheduling Tasks, and Launching Programs](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#17---keeping-time-scheduling-tasks-and-launching-programs)
+- [ ] [18 - Sending Email and Text Messages](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#18---sending-email-and-text-messages)
+- [ ] [19 - Manipulating Images](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#19---manipulating-images)
+- [ ] [20 - Controlling the Keyboard and Mouse with GUI Automation](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#20---controlling-the-keyboard-and-mouse-with-gui-automation)
 
 ## Introduction <!-- 20240117 -->
 - Examples of _operating system_: Microsoft Windows, Linux OS, Apple macOS, Apple iOS, Google's Android OS   
