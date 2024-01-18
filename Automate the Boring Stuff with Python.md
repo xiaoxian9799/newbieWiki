@@ -169,7 +169,62 @@ Errors can be handled with `try` and `except` statements.
 - The code that could potentially have an error is put in a `try` clause.
 - The program execution moves to the start of a following `except` clause if an error happens.
 
-## 04 - Lists
+## 04 - Lists     
+Methods    
+
+| | Strings | Lists | Tuples |
+| --- | --- | --- | --- |
+| | | Ordered sequence | |
+| | ' ' | [ ] | |
+| Items | | _comma-delimited_ | |
+| | | ls_name[index] or ls_name[slice_starts:slice_ends] | |
+| `len()` | num of chars | num of vals | |
+| Concatenation with `+` | / | / | |
+| Replication with `*` | / | / | |
+
+
+```Python
+>>> ls_name = [['a', 'b', 'c'], [10, 20, 30]]
+
+>>> ls_name[0]  
+['a', 'b', 'c']
+
+>>> ls_name[1][2]
+30
+
+>>> ls_name = ['a', 'b', 'c']
+
+>>> ls_name[-1]    # index
+'c'
+
+>>> ls_name[1:2]    # slice
+'b'
+
+>>> del ls_name[2]    # removing values from lists
+>>> ls_name
+['a', 'b']
+
+>>> 'a' in ls_name
+True
+
+>>> 'a' not in ls_name
+False
+```
+
+### The Multiple Assignment Trick
+aka _tuple unpacking_
+
+```Python
+cat = ['fat', 'gray', 5]
+size, color, age = cat
+
+>>> color
+gray
+```
+
+```Python
+
+```
 
 ## 05 - Dictionaries and Structuring Data
 
