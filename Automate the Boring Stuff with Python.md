@@ -143,7 +143,7 @@ import sys
 sys.exit()    # terminate or exit the program before the last instruction
 ```
 
-## 03 - Functions
+## 03 - Functions <!-- 20240117 -->
 to _deduplicate_ code (getting rid of duplicated or copy-and-pasted code) to make your program shorter, easier to read, and easier to update.    
 
 ```Python
@@ -169,7 +169,7 @@ Errors can be handled with `try` and `except` statements.
 - The code that could potentially have an error is put in a `try` clause.
 - The program execution moves to the start of a following `except` clause if an error happens.
 
-## 04 - Lists  &  05 - Dictionaries and Structuring Data
+## 04 - Lists  &  05 - Dictionaries and Structuring Data <!-- 20240118 -->
 
 | | Strings | Lists | Tuples | Dictionaries |
 | --- | --- | --- | --- | --- |
@@ -345,7 +345,7 @@ pprint.pprint(dict_name)
 pprint.pformat(dict_name)
 ```
 
-## 06 - Manipulating Strings
+## 06 - Manipulating Strings <!-- 20240118 -->
 ### Escape Characters
 `\'`, `\"`, `\t`, `\n`, `\\`
 
