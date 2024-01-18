@@ -8,7 +8,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] [02 - Flow Control](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#02---flow-control)      
 - [X] [03 - Functions](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#03---functions)      
 - [X] [04 - Lists](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)      
-- [ ] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#05---dictionaries-and-structuring-data)      
+- [ ] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)    
 - [ ] [06 - Manipulating Strings](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#06---manipulating-strings)
 
 **Part II: Automating Tasks**    
@@ -169,18 +169,17 @@ Errors can be handled with `try` and `except` statements.
 - The code that could potentially have an error is put in a `try` clause.
 - The program execution moves to the start of a following `except` clause if an error happens.
 
-## 04 - Lists     
+## 04 - Lists  &  05 - Dictionaries and Structuring Data
 
-| | Strings | Lists | Tuples |
-| --- | --- | --- | --- |
-| Sequence | | ordered | ordered |
-| | ' ' | [ ] | ( ) |
-| Items | | _comma-delimited_ | _comma-delimited_ |
-| | | ls_name[index] or ls_name[slice_starts:slice_ends] | |
+| | Strings | Lists | Tuples | Dictionaries |
+| --- | --- | --- | --- | --- |
+| Sequence | | ordered | ordered | unordered |
+| | ' ' | [ ] | ( ) | { } |
+| Items | | _comma-delimited_ | _comma-delimited_ | _comma-delimited_ |
 | `len()` | num of chars | num of vals | |
 | Concatenation with `+` or `+=` | / | / | |
 | Replication with `*` or `*=` | / | / | |
-| **Data Type** | _immutable_ | _mutable_ | _immutable_ |
+| **Data Type** | _immutable_ | _mutable_ | _immutable_ | _mutable_ |
 | Conversion | str() | list() | tuple() |
 
 Mutable data type means it can have values added, removed, or changed.    
@@ -207,13 +206,13 @@ Example:
 
 >>> ls_name = ['a', 'b', 'c']
 
->>> ls_name[-1]    # index
+>>> ls_name[-1]       # ls_name[index] 
 'c'
 
->>> ls_name[1:2]    # slice
+>>> ls_name[1:2]      # ls_name[slice_starts:slice_ends] 
 'b'
 
->>> del ls_name[2]    # remove a value from the list (using index), return None [vs ls_name.remove(val)]
+>>> del ls_name[2]    # removes a value from the list (using index), return None [vs ls_name.remove(val)]
 >>> ls_name
 ['a', 'b']
 
@@ -236,7 +235,7 @@ gray
 ```
 
 ```Python
-# enumerate() return two values: the index of the item in the list, and the item in the list itself
+# enumerate() returns two values: the index of the item in the list, and the item in the list itself
 >>> fruits = ['avocado', 'banana', 'honeydew']
 >>> for index, fruit in enumerate(fruits):
 ...    print('Index ' + str(index) + 'in fruits is: ' + fruit)
@@ -247,8 +246,8 @@ Index 0 in fruits is: avocado
 .
 
 import random
-random.choice(ls_name)     # return a randomly selected item from the list
-random.shuffle(ls_name)    # reorder the items in a list, return None
+random.choice(ls_name)     # returns a randomly selected item from the list
+random.shuffle(ls_name)    # reorders the items in a list, returns None
 ```
 
 | Augmented Assignment Operator |
@@ -263,14 +262,14 @@ random.shuffle(ls_name)    # reorder the items in a list, return None
 Each data type has its own set of methods.
 
 ```Python
->>> ls_name.index(val)            # return the index of the value, if that value exists in the list
->>> ls_name.append(val)           # add a value to the end of the list, return None
->>> ls_name.insert(index, val)    # add a value at any index in the list, return None
->>> ls_name.remove(val)           # remove a value from the list (using value), return None [vs del ls_name(index)]
->>> ls_name.sort()                # sort the list of number values or list of string, uses “ASCIIbetical order”, return None
->>> ls_name.sort(reverse=True)    # sort the list of number values or list of string, in reverse order, return None
->>> ls_name.sort(key=str.lower)   # sort the list of number values or list of string, uses regular alphabetical order, return None
->>> ls_name.reverse()             # reverse the order of the items in a list
+>>> ls_name.index(val)            # returns the index of the value, if that value exists in the list
+>>> ls_name.append(val)           # adds a value to the end of the list, returns None
+>>> ls_name.insert(index, val)    # adds a value at any index in the list, returns None
+>>> ls_name.remove(val)           # removes a value from the list (using value), returns None [vs del ls_name(index)]
+>>> ls_name.sort()                # sorts the list of number values or list of string, uses “ASCIIbetical order”, returns None
+>>> ls_name.sort(reverse=True)    # sorts the list of number values or list of string, in reverse order, returns None
+>>> ls_name.sort(key=str.lower)   # sorts the list of number values or list of string, uses regular alphabetical order, returns None
+>>> ls_name.reverse()             # reverses the order of the items in a list
 ```
 
 > [!TIP]
@@ -288,7 +287,56 @@ Each data type has its own set of methods.
 
 If the list you need to copy contains lists, then use the `copy.deepcopy()` function instead of `copy.copy()`. The `deepcopy()` function will copy these inner lists as well.
 
-## 05 - Dictionaries and Structuring Data
+### Dictionaries
+
+```Python
+>>> cat = {'size': 'fat', 'color': 'gray', 'age': 5}    # dict_name = {key:val, ...}
+>>> cat['size']                                         # dict_name[key]
+'fat'
+```
+
+```Python
+>>> cat = {'size': 'fat', 'color': 'gray', 'age': 5}
+
+>>> for k in cat.keys():      # dict_name.keys() returns keys
+...  print(k)
+
+size
+color
+age
+
+>>> for v in cat.values():    # dict_name.values() returns values
+...  print(v)
+
+fat
+gray
+5
+
+>>> for i in cat.items():     # dict_name.items() returns key-value pairs
+...  print(i)
+
+('size', 'fat')               # tuple
+('color', 'gray')
+('age', 5)
+
+>>> for k, v in cat.items():
+...  print(k + ': ' + str(v))
+
+size: fat
+color: gray
+age: 5
+```
+
+```Python
+val in dict_name.keys()    # check whether a certain key exists in a dictionary, returns Boolean
+val in dict_name.values()    # check whether a certain value exists in a dictionary, returns Boolean
+
+# get() method takes two arguments: the key of the value to retrieve and a fallback value to return if that key does not exist.
+>>> 'The cat is ' + str(cat.get('size', 'small')) + '.'
+'The cat is fat.'
+>>> 'The cat is ' + str(cat.get('attr', 'cute')) + '.'
+'The cat is cute.'
+```
 
 ## 06 - Manipulating Strings
 ## 07 - Pattern Matching with RegEx  
