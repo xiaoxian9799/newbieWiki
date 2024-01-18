@@ -174,7 +174,7 @@ Errors can be handled with `try` and `except` statements.
 | | Strings | Lists | Tuples | Dictionaries |
 | --- | --- | --- | --- | --- |
 | Items Sequence | | ordered | ordered | unordered |
-| | ' ' | [ ] | ( ) | { } |
+| | ' ' or " " | [ ] | ( ) | { } |
 | Items | | _comma-delimited_ | _comma-delimited_ | _comma-delimited_ |
 | `len()` | num of chars | num of vals | |
 | Concatenation with `+` or `+=` | / | / | |
@@ -346,6 +346,98 @@ pprint.pformat(dict_name)
 ```
 
 ## 06 - Manipulating Strings
+### Escape Characters
+`\'`, `\"`, `\t`, `\n`, `\\`
+
+### Raw Strings
+A _raw string_ completely ignores all escape characters and prints any backslash that appears in the string.
+
+```Python
+>>> print(r' ')
+```
+
+### Multiline Strings
+A multiline string in Python begins and ends with either three single quotes or three double quotes. Any quotes, tabs, or newlines in between the "triple quotes" are considered part of the string.
+
+```Python
+print('''
+
+
+''')
+```
+
+### Multiline Comments
+```Python
+"""
+
+"""
+```
+
+### String Interpolation
+```Python
+>>> name = 'xx'
+>>> age = 99
+
+>>> 'My name is %s. I am %s years old.' % (name, age)
+'My name is xx. I am 99 years old.'
+
+>>> f'My name is {name}. I am {age} years old.'
+'My name is xx. I am 99 years old.'
+```
+
+```Python
+# Methods to make a case-insensitive comparison
+str_name = str_name.upper()    # returns a new string where all the letters in the original string have been converted to uppercase
+str_name = str_name.lower()    # returns a new string where all the letters in the original string have been converted to lowercase
+str_name.isupper()             # returns a Boolean True value if the string has at least one letter and all the letters are uppercase
+str_name.islower()             # returns a Boolean True value if the string has at least one letter and all the letters are lowercase
+
+# Methods to validate the user input
+str_name.isalpha()             # returns a Boolean True value if the string consists only of letters and is not blank
+str_name.isalnum()             # returns a Boolean True value if the string consists only of letters and numbers and is not blank
+str_name.isdecimal()           # returns a Boolean True value if the string consists only of numeric characters and is not blank
+str_name.isspace()             # returns a Boolean True value if the string consists only of spaces, tabs, and newlines and is not blank
+str_name.istitle()             # returns a Boolean True value if the string consists only of words that begin with an uppercase letter followed by only lowercase letters
+
+>>> 'hello'.isalnum()
+True
+>>> '    '.isspace()
+True
+>>> 'This Is Title Case'.istitle()
+True
+>>> 'This Is Title Case 123'.istitle()
+True
+>>> 'This Is not Title Case'.istitle()
+False
+>>> 'This Is NOT Title Case'.istitle()
+False
+
+str_name.startswith(str_val)    # returns a Boolean True value if the string begins with the string passed to the method
+str_name.endswith(str_val)      # returns a Boolean True value if the string ends with the string passed to the method
+
+>>> 'ABC'.join(['My', 'name', 'is', 'Simon'])
+'MyABCnameABCisABCSimon'
+>>> 'MyABCnameABCisABCSimon'.split('ABC')    # by default, the string is split whenever whitespace characters (space, tab, or newline characters) are found
+['My', 'name', 'is', 'Simon']
+
+# A common use of split() is to split a multiline strng along the \n newline characters.
+
+# partition() method is useful for splitting a string whenever you need the parts before, including, and after a particular separator string.
+>>> before, sep, after = 'xx@github.com'.partition('@')
+>>> before
+'xx'
+>>> after
+'github.com'
+
+# If the separator string you pass to partition() occurs multiple times in the string that partition() calls on, the method splits the string only on the first occurrence:
+>>> 'MyABCnameABCisABCSimon'.partition('ABC')
+('My', 'ABC', 'nameABCisABCSimon')
+
+# If the separator string can't be found, the first string returned in the tuple will be the entire string, and the other two strings will be empty:
+>>> 'MyABCnameABCisABCSimon'.partition('banana')
+('MyABCnameABCisABCSimon', '', '')
+```
+
 ## 07 - Pattern Matching with RegEx  
 ## 08 - Input Validation    
 ## 09 - Reading and Writing Files
