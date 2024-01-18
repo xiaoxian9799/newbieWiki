@@ -7,7 +7,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] [01 - Python Basics](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#01---python-basics)      
 - [X] [02 - Flow Control](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#02---flow-control)      
 - [X] [03 - Functions](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#03---functions)      
-- [ ] [04 - Lists](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)      
+- [X] [04 - Lists](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)      
 - [ ] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#05---dictionaries-and-structuring-data)      
 - [ ] [06 - Manipulating Strings](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#06---manipulating-strings)
 
@@ -170,18 +170,18 @@ Errors can be handled with `try` and `except` statements.
 - The program execution moves to the start of a following `except` clause if an error happens.
 
 ## 04 - Lists     
-Methods    
 
 | | Strings | Lists | Tuples |
 | --- | --- | --- | --- |
-| | | Ordered sequence | |
-| | ' ' | [ ] | |
-| Items | | _comma-delimited_ | |
+| Sequence | | ordered | ordered |
+| | ' ' | [ ] | ( ) |
+| Items | | _comma-delimited_ | _comma-delimited_ |
 | | | ls_name[index] or ls_name[slice_starts:slice_ends] | |
 | `len()` | num of chars | num of vals | |
 | Concatenation with `+` or `+=` | / | / | |
 | Replication with `*` or `*=` | / | / | |
-| Data Type | _immutable_ | _mutable_ | _immutable_ |
+| **Data Type** | _immutable_ | _mutable_ | _immutable_ |
+| Conversion | str() | list() | tuple() |
 
 Mutable data type means it can have values added, removed, or changed.    
 The proper way to "mutate" a string is to use slicing and concatenation to build a new string by copying from parts of the old string.
@@ -276,6 +276,17 @@ Each data type has its own set of methods.
 > [!TIP]
 > You can split up a single instruction across multiple lines using the `\` _line continuation character_ at the end.
 
+```Python
+>>> import copy
+>>> ls_first = ['a', 'b', 'c']
+>>> id(ls_first)    # obtain its unique identity
+44684232
+>>> ls_second = copy.copy(ls_first)
+>>> id(ls_second)
+44685832
+```
+
+If the list you need to copy contains lists, then use the `copy.deepcopy()` function instead of `copy.copy()`. The `deepcopy()` function will copy these inner lists as well.
 
 ## 05 - Dictionaries and Structuring Data
 
