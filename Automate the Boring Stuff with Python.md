@@ -9,7 +9,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] [03 - Functions](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#03---functions)      
 - [X] [04 - Lists](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)      
 - [X] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)    
-- [ ] [06 - Manipulating Strings](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#06---manipulating-strings)
+- [X] [06 - Manipulating Strings](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#06---manipulating-strings)
 
 **Part II: Automating Tasks**    
 - [ ] [07 - Pattern Matching with RegEx](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#07---pattern-matching-with-regex)    
@@ -436,6 +436,21 @@ str_name.endswith(str_val)      # returns a Boolean True value if the string end
 # If the separator string can't be found, the first string returned in the tuple will be the entire string, and the other two strings will be empty:
 >>> 'MyABCnameABCisABCSimon'.partition('banana')
 ('MyABCnameABCisABCSimon', '', '')
+```
+
+### Justifying Text
+To print tabular data that has correct spacing (strings are neatly aligned).
+`rjust(), ljust(), center()`
+
+### Removing Whitespace
+To strip off whitespace characters (space, tab, and newline)
+`strip(), rstrip(), lstrip()`
+
+### Copying and Pasting Strings
+```Python
+import pyperclip
+pyperclip.copy(str_name)    # sends text to your computer's clipboard
+pyperclip.paste()           # receives text from your computer's clipboard
 ```
 
 ## 07 - Pattern Matching with RegEx  
