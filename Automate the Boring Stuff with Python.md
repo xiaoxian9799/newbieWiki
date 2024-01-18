@@ -181,7 +181,7 @@ Methods
 | `len()` | num of chars | num of vals | |
 | Concatenation with `+` or `+=` | / | / | |
 | Replication with `*` or `*=` | / | / | |
-| Data Type | _immutable_ | _mutable_ | |
+| Data Type | _immutable_ | _mutable_ | _immutable_ |
 
 Mutable data type means it can have values added, removed, or changed.    
 The proper way to "mutate" a string is to use slicing and concatenation to build a new string by copying from parts of the old string.
