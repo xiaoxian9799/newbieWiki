@@ -181,7 +181,20 @@ Methods
 | `len()` | num of chars | num of vals | |
 | Concatenation with `+` or `+=` | / | / | |
 | Replication with `*` or `*=` | / | / | |
+| Data Type | _immutable_ | _mutable_ | |
 
+Mutable data type means it can have values added, removed, or changed.    
+The proper way to "mutate" a string is to use slicing and concatenation to build a new string by copying from parts of the old string.
+
+Example:
+```Python
+>>> name = 'newbieWiki'
+>>> newName = name[0:6] + 'Help'
+>>> name
+'newbieWiki'
+>>> newName
+'newbieHelp'
+```
 
 ```Python
 >>> ls_name = [['a', 'b', 'c'], [10, 20, 30]]
