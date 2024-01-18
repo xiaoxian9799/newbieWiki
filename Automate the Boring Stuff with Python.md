@@ -8,7 +8,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] [02 - Flow Control](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#02---flow-control)      
 - [X] [03 - Functions](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#03---functions)      
 - [X] [04 - Lists](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)      
-- [ ] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)    
+- [X] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)    
 - [ ] [06 - Manipulating Strings](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#06---manipulating-strings)
 
 **Part II: Automating Tasks**    
@@ -173,7 +173,7 @@ Errors can be handled with `try` and `except` statements.
 
 | | Strings | Lists | Tuples | Dictionaries |
 | --- | --- | --- | --- | --- |
-| Sequence | | ordered | ordered | unordered |
+| Items Sequence | | ordered | ordered | unordered |
 | | ' ' | [ ] | ( ) | { } |
 | Items | | _comma-delimited_ | _comma-delimited_ | _comma-delimited_ |
 | `len()` | num of chars | num of vals | |
@@ -328,7 +328,7 @@ age: 5
 ```
 
 ```Python
-val in dict_name.keys()    # check whether a certain key exists in a dictionary, returns Boolean
+val in dict_name.keys()      # check whether a certain key exists in a dictionary, returns Boolean
 val in dict_name.values()    # check whether a certain value exists in a dictionary, returns Boolean
 
 # get() method takes two arguments: the key of the value to retrieve and a fallback value to return if that key does not exist.
@@ -336,6 +336,13 @@ val in dict_name.values()    # check whether a certain value exists in a diction
 'The cat is fat.'
 >>> 'The cat is ' + str(cat.get('attr', 'cute')) + '.'
 'The cat is cute.'
+
+# setdefault() method takes two arguments: the key to check for and the value to set at that key if the key does not exist. If the key does exist, the setdefault() method returns the key's value.
+>>> dict_name.setdefault(k_val, v_val)
+
+import pprint                # pretty printing
+pprint.pprint(dict_name)
+pprint.pformat(dict_name)
 ```
 
 ## 06 - Manipulating Strings
