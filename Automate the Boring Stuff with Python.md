@@ -234,12 +234,12 @@ Index 0 in fruits is: avocado
 .
 
 import random
-random.choice(ls_name)    # return a randomly selected item from the list
+random.choice(ls_name)     # return a randomly selected item from the list
 random.shuffle(ls_name)    # reorder the items in a list, return None
 ```
 
 | Augmented Assignment Operator |
-| --- |
+| :---: |
 | += |
 | -= |
 | *= |
@@ -250,15 +250,18 @@ random.shuffle(ls_name)    # reorder the items in a list, return None
 Each data type has its own set of methods.
 
 ```Python
->>> ls_name.index(val)    # return the index of the value, if that value exists in the list
->>> ls_name.append(val)    # add a value to the end of the list, return None
+>>> ls_name.index(val)            # return the index of the value, if that value exists in the list
+>>> ls_name.append(val)           # add a value to the end of the list, return None
 >>> ls_name.insert(index, val)    # add a value at any index in the list, return None
->>> ls_name.remove(val)    # remove a value from the list (using value), return None [vs del ls_name(index)]
->>> ls_name.sort()    # sort the list of number values or list of string, uses “ASCIIbetical order”, return None
+>>> ls_name.remove(val)           # remove a value from the list (using value), return None [vs del ls_name(index)]
+>>> ls_name.sort()                # sort the list of number values or list of string, uses “ASCIIbetical order”, return None
 >>> ls_name.sort(reverse=True)    # sort the list of number values or list of string, in reverse order, return None
->>> ls_name.sort(key=str.lower)    # sort the list of number values or list of string, uses regular alphabetical order, return None
+>>> ls_name.sort(key=str.lower)   # sort the list of number values or list of string, uses regular alphabetical order, return None
+>>> ls_name.reverse()             # reverse the order of the items in a list
 ```
 
+> [!TIP]
+> You can split up a single instruction across multiple lines using the `\` _line continuation character_ at the end.
 
 
 ## 05 - Dictionaries and Structuring Data
