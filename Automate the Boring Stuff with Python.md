@@ -179,8 +179,8 @@ Methods
 | Items | | _comma-delimited_ | |
 | | | ls_name[index] or ls_name[slice_starts:slice_ends] | |
 | `len()` | num of chars | num of vals | |
-| Concatenation with `+` | / | / | |
-| Replication with `*` | / | / | |
+| Concatenation with `+` or `+=` | / | / | |
+| Replication with `*` or `*=` | / | / | |
 
 
 ```Python
@@ -200,7 +200,7 @@ Methods
 >>> ls_name[1:2]    # slice
 'b'
 
->>> del ls_name[2]    # removing values from lists
+>>> del ls_name[2]    # remove a value from the list (using index), return None [vs ls_name.remove(val)]
 >>> ls_name
 ['a', 'b']
 
@@ -223,8 +223,43 @@ gray
 ```
 
 ```Python
+# enumerate() return two values: the index of the item in the list, and the item in the list itself
+>>> fruits = ['avocado', 'banana', 'honeydew']
+>>> for index, fruit in enumerate(fruits):
+...    print('Index ' + str(index) + 'in fruits is: ' + fruit)
 
+Index 0 in fruits is: avocado
+.
+.
+.
+
+import random
+random.choice(ls_name)    # return a randomly selected item from the list
+random.shuffle(ls_name)    # reorder the items in a list, return None
 ```
+
+| Augmented Assignment Operator |
+| --- |
+| += |
+| -= |
+| *= |
+| /= |
+| %= |
+
+### Methods
+Each data type has its own set of methods.
+
+```Python
+>>> ls_name.index(val)    # return the index of the value, if that value exists in the list
+>>> ls_name.append(val)    # add a value to the end of the list, return None
+>>> ls_name.insert(index, val)    # add a value at any index in the list, return None
+>>> ls_name.remove(val)    # remove a value from the list (using value), return None [vs del ls_name(index)]
+>>> ls_name.sort()    # sort the list of number values or list of string, uses “ASCIIbetical order”, return None
+>>> ls_name.sort(reverse=True)    # sort the list of number values or list of string, in reverse order, return None
+>>> ls_name.sort(key=str.lower)    # sort the list of number values or list of string, uses regular alphabetical order, return None
+```
+
+
 
 ## 05 - Dictionaries and Structuring Data
 
