@@ -456,14 +456,17 @@ pyperclip.paste()           # receives text from your computer's clipboard
 ## 07 - Pattern Matching with RegExes  
 _Regular expressions_ allow you to specify a pattern of text to search for.
 
-`\d` = a digit char (0-9)
-pattern{n} = match this pattern n times
+| Shorthand Char Class | Represents | Shorthand Char Class | Represents | 
+| :---: | --- | :---: | --- |
+| `\d` | Any numeric digit from 0 to 9 | `\D` | opposite of `\d` |
+| `\w` | Any letter, numeric digit, or the underscore char | `\W` | opposite of `\w` |
+| `\s` | Any space, tab, or newline char | `\S` | opposite of `\s` |
 
 ```Python
 >>> import re
 
 # passing a string value representing your regular expression to re.compile() returns a Regex pattern object or Regex object
->>> phoneNumRegex = re.compile(r'\d{3}-\d{8}')    # the phoneNumRegex var contains a Regex object
+>>> phoneNumRegex = re.compile(r'\d\d\d-\d\d\d\d\d\d\d\d')    # the phoneNumRegex var contains a Regex object
 
 # search() method searches the string it is passed for any matches to the regex, returns None if the regex pattern is not found in the string, and if the pattern is found, returns a Match object (mo), which has a group() method that will return the actual matched text from the searched string
 >>> mo = phoneNumRegex.search('My number is 011-12345678.')
@@ -488,7 +491,7 @@ Phone number found: 011-12345678
 (011)
 ```
 
-### | _pipe_
+### Matching with |
 ```Python
 # The | pipe char matches either one of the expressions. If both expressions occur in the searched string, the first occurence of matching text will be returned as mo.
 >>> fruitRegex = re.compile(r'avocado|banana')
@@ -504,7 +507,7 @@ Phone number found: 011-12345678
 'mama'
 ```
 
-### Matching with ? and *
+### Matching with ? * +
 ```Python
 # The ? char matches zero or one of the group preceding the question mark
 >>> genderRegex = re.compile(r'(pine)?apple')
@@ -515,9 +518,55 @@ Phone number found: 011-12345678
 >>> mo.group()
 'pineapple'
 
-# The * char macthes zero or more of the group preceding the star or asterisk
->>> 
+# The * char matches zero or more of the group preceding the star or asterisk
+>>> genderRegex = re.compile(r'(pine)*apple')
+>>> mo = genderRegex.search('apple')
+>>> mo.group()
+'apple'
+>>> mo = genderRegex.search('pineapple')
+>>> mo.group()
+'pineapple'
+>>> mo = genderRegex.search('pinepineapple')
+>>> mo.group()
+'pinepineapple'
 
+# The + char matches one or more of the group preceding the plus
+>>> genderRegex = re.compile(r'(pine)+apple')
+>>> mo = genderRegex.search('apple')
+>>> mo == None
+True
+>>> mo = genderRegex.search('pineapple')
+>>> mo.group()
+'pineapple'
+>>> mo = genderRegex.search('pinepineapple')
+>>> mo.group()
+'pinepineapple'
+```
+
+### Matching with { }
+```Python
+# The { } matches the group preceding the braces, a specific number of times
+(group){min_num, max_num}
+```
+
+### Greedy and Non-greedy Matching
+Python's regexes are _greedy_ by default, which means that in ambiguous situations they will match the longest string possible.     
+The _non-greedy or lazy_ version of the braces, which matches the shortest string possible, has the closing brace followed by a question mark.
+```Python
+# Non-greedy forms of the braces
+(group){min_num, max_num}?
+```
+
+```Python
+# search() method returns a mo of the first matched text in the searched string, whereas the findall() method returns the strings of every match in the searched string
+
+>>> fruitRegex = re.compile(r'\d\d-\d\d')        # has no groups
+>>> fruitRegex.findall('01-23 45-67')
+['01-23', '45-67']
+
+>>> fruitRegex = re.compile(r'(\d\d)-(\d\d)')    # has groups
+>>> fruitRegex.findall('01-23 45-67')
+[('01', '23'), ('45', '67')]
 ```
 
 ## 08 - Input Validation    
