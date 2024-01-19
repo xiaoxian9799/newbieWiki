@@ -3,13 +3,13 @@ Reference: https://automatetheboringstuff.com/
 
 ## Table of Contents   
 **Part I: Python Programming Basics**        
-- [X] [Introduction](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#introduction)      
-- [X] [01 - Python Basics](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#01---python-basics)      
-- [X] [02 - Flow Control](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#02---flow-control)      
-- [X] [03 - Functions](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#03---functions)      
-- [X] [04 - Lists](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)      
-- [X] [05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)    
-- [X] [06 - Manipulating Strings](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#06---manipulating-strings)
+- [X] <!-- 20240117 -->[Introduction](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#introduction)      
+- [X] <!-- 20240117 -->[01 - Python Basics](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#01---python-basics)      
+- [X] <!-- 20240117 -->[02 - Flow Control](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#02---flow-control)      
+- [X] <!-- 20240117 -->[03 - Functions](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#03---functions)      
+- [X] <!-- 20240118 -->[04 - Lists](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)      
+- [X] <!-- 20240118 -->[05 - Dictionaries and Structuring Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#04---lists)    
+- [X] <!-- 20240118 -->[06 - Manipulating Strings](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#06---manipulating-strings)
 
 **Part II: Automating Tasks**    
 - [ ] [07 - Pattern Matching with RegEx](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#07---pattern-matching-with-regex)    
@@ -27,7 +27,7 @@ Reference: https://automatetheboringstuff.com/
 - [ ] [19 - Manipulating Images](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#19---manipulating-images)
 - [ ] [20 - Controlling the Keyboard and Mouse with GUI Automation](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#20---controlling-the-keyboard-and-mouse-with-gui-automation)
 
-## Introduction <!-- 20240117 -->
+## Introduction 
 - Examples of _operating system_: Microsoft Windows, Linux OS, Apple macOS, Apple iOS, Google's Android OS   
 - The _interactive shell_ is good for _running or executing_ Python _instructions_ one at a time (by using >>> _prompt_), whereas _file editor_ is good to write instructions for the entire Python programs.
 - Both _compiler_ and _interpreter_ translate _source code_ (that adhere to _syntax rules_) into machine code. Compiler translates code at once before the program runs, whereas interpreter translates code line-by-line as the program runs.    
@@ -47,7 +47,7 @@ A _module_ is a Python program that contains a related group of functions that c
   func_name()
 ```
 
-## 01 - Python Basics <!-- 20240117 -->
+## 01 - Python Basics
 - _Expressions_ are formed by putting _values_ and _operators_ together, and they always _evaluate_ down to a single value.    
 - A _data type_ is a category for values, examples: _int_, _float_, _str_, and _Boolean_.
 - A _variable_ is _initialized or created_ the first time a value is stored in it. The variable can be _overwritten_ when it is assigned a new value.
@@ -80,7 +80,7 @@ _assignment operator_ `=`
 
 _comment_ `#`   
 
-## 02 - Flow Control <!-- 20240117 -->
+## 02 - Flow Control
 flowchart    
 
 Comparison operators or relational operators
@@ -143,7 +143,7 @@ import sys
 sys.exit()    # terminate or exit the program before the last instruction
 ```
 
-## 03 - Functions <!-- 20240117 -->
+## 03 - Functions 
 to _deduplicate_ code (getting rid of duplicated or copy-and-pasted code) to make your program shorter, easier to read, and easier to update.    
 
 ```Python
@@ -169,7 +169,7 @@ Errors can be handled with `try` and `except` statements.
 - The code that could potentially have an error is put in a `try` clause.
 - The program execution moves to the start of a following `except` clause if an error happens.
 
-## 04 - Lists  &  05 - Dictionaries and Structuring Data <!-- 20240118 -->
+## 04 - Lists  &  05 - Dictionaries and Structuring Data 
 
 | | Strings | Lists | Tuples | Dictionaries |
 | --- | --- | --- | --- | --- |
@@ -345,7 +345,7 @@ pprint.pprint(dict_name)
 pprint.pformat(dict_name)
 ```
 
-## 06 - Manipulating Strings <!-- 20240118 -->
+## 06 - Manipulating Strings 
 ### Escape Characters
 `\'`, `\"`, `\t`, `\n`, `\\`
 
