@@ -453,7 +453,73 @@ pyperclip.copy(str_name)    # sends text to your computer's clipboard
 pyperclip.paste()           # receives text from your computer's clipboard
 ```
 
-## 07 - Pattern Matching with RegEx  
+## 07 - Pattern Matching with RegExes  
+_Regular expressions_ allow you to specify a pattern of text to search for.
+
+`\d` = a digit char (0-9)
+pattern{n} = match this pattern n times
+
+```Python
+>>> import re
+
+# passing a string value representing your regular expression to re.compile() returns a Regex pattern object or Regex object
+>>> phoneNumRegex = re.compile(r'\d{3}-\d{8}')    # the phoneNumRegex var contains a Regex object
+
+# search() method searches the string it is passed for any matches to the regex, returns None if the regex pattern is not found in the string, and if the pattern is found, returns a Match object (mo), which has a group() method that will return the actual matched text from the searched string
+>>> mo = phoneNumRegex.search('My number is 011-12345678.')
+>>> print('Phone number found: ' + mo.group())
+Phone number found: 011-12345678
+
+# grouping with parentheses
+>>> phoneNumRegex = re.compile(r'(\(\d\d\d\))-(\d\d\d\d\d\d\d\d)')    # escaping . ^ $ * + ? { } [ ] \ | ( ) char with a backslash 
+>>> mo = phoneNumRegex.search('My number is (011)-12345678.')
+
+>>> mo.group(0)    # or mo.group()
+'(011)-12345678'
+>>> mo.group(1)
+'(011)'
+>>> mo.group(2)
+'12345678'
+
+>>> mo.groups()
+('(011)', '12345678')
+>>> areaCode, mainNum = mo.groups()
+>>> print(areaCode)
+(011)
+```
+
+### | _pipe_
+```Python
+# The | pipe char matches either one of the expressions. If both expressions occur in the searched string, the first occurence of matching text will be returned as mo.
+>>> fruitRegex = re.compile(r'avocado|banana')
+>>> mo = fruitRegex.search('banana and avocado)
+>>> mo.group()
+'banana'
+
+>>> fruitRegex = re.compile(r'ba(nana|mama|sasa)')
+>>> mo = fruitRegex.search('Hi bamama!')
+>>> mo.group()
+'bamama'
+>>> mo.group(1)
+'mama'
+```
+
+### Matching with ? and *
+```Python
+# The ? char matches zero or one of the group preceding the question mark
+>>> genderRegex = re.compile(r'(pine)?apple')
+>>> mo = genderRegex.search('apple')
+>>> mo.group()
+'apple'
+>>> mo = genderRegex.search('pineapple')
+>>> mo.group()
+'pineapple'
+
+# The * char macthes zero or more of the group preceding the star or asterisk
+>>> 
+
+```
+
 ## 08 - Input Validation    
 ## 09 - Reading and Writing Files
 ## 10 - Organizing Files
