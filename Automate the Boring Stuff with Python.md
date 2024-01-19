@@ -461,6 +461,12 @@ _Regular expressions_ allow you to specify a pattern of text to search for.
 | `\d` | Any numeric digit from 0 to 9 | `\D` | opposite of `\d` |
 | `\w` | Any letter, numeric digit, or the underscore char | `\W` | opposite of `\w` |
 | `\s` | Any space, tab, or newline char | `\S` | opposite of `\s` |
+| [ ] | self-defined char class | [^ ] | self-defined negative char class (matches all the chars that are not in the char class|
+
+Example:
+`[aeiouAEIOU]` - matches any vowel, both lowercase and uppercase
+`[a-zA-Z0-9]` - matches all lowercase letters, uppercase letters, and numbers
+`[0-5\.]` - matches digits 0 to 5 and a period
 
 ```Python
 >>> import re
@@ -568,6 +574,20 @@ The _non-greedy or lazy_ version of the braces, which matches the shortest strin
 >>> fruitRegex.findall('01-23 45-67')
 [('01', '23'), ('45', '67')]
 ```
+
+### Matching with ^ $
+```Python
+# The ^ caret symbol at the start of a regex indicates that a match must occur at the beginning of the searched text.
+# The $ dollar sign at the end of a regex indicates that a match must end with the regex pattern.
+# The ^ and $ used together indicates that the entire string must match the regex.
+```
+
+### The Wildcard Char
+The . dot char in a regex is called a _wildcard_ and will match any single char exceptthe newline.
+
+### Matching with .*
+The .* dot-star matches everything and anything, in a greedy mode.    
+The .*? dot-star-ques_mark matches everything and anything, in a non-greedy fashion.    
 
 ## 08 - Input Validation    
 ## 09 - Reading and Writing Files
