@@ -12,7 +12,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] <!-- 20240118 -->[06 - Manipulating Strings](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#06---manipulating-strings)
 
 **Part II: Automating Tasks**    
-- [ ] [07 - Pattern Matching with RegEx](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#07---pattern-matching-with-regex)    
+- [X] <!-- 20240118 -->[07 - Pattern Matching with RegEx](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#07---pattern-matching-with-regex)    
 - [ ] [08 - Input Validation](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#08---input-validation)    
 - [ ] [09 - Reading and Writing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#09---reading-and-writing-files)
 - [ ] [10 - Organizing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#10---organizing-files)
