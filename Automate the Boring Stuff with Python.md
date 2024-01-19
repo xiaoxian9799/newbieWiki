@@ -515,7 +515,7 @@ Phone number found: 011-12345678
 
 ### Matching with ? * +
 ```Python
-# The ? char matches zero or one of the group preceding the question mark
+# The ? question mark char matches zero or one of the preceding group
 >>> genderRegex = re.compile(r'(pine)?apple')
 >>> mo = genderRegex.search('apple')
 >>> mo.group()
@@ -524,7 +524,7 @@ Phone number found: 011-12345678
 >>> mo.group()
 'pineapple'
 
-# The * char matches zero or more of the group preceding the star or asterisk
+# The * star or asterisk char matches zero or more of the preceding group
 >>> genderRegex = re.compile(r'(pine)*apple')
 >>> mo = genderRegex.search('apple')
 >>> mo.group()
@@ -536,7 +536,7 @@ Phone number found: 011-12345678
 >>> mo.group()
 'pinepineapple'
 
-# The + char matches one or more of the group preceding the plus
+# The + plus char matches one or more of the preceding group
 >>> genderRegex = re.compile(r'(pine)+apple')
 >>> mo = genderRegex.search('apple')
 >>> mo == None
@@ -549,18 +549,22 @@ True
 'pinepineapple'
 ```
 
-### Matching with { }
+### Matching with {n,m}
 ```Python
-# The { } matches the group preceding the braces, a specific number of times
-(group){min_num, max_num}
+# The {n} matches exactly n of the preceding group
+# The {n,} matches n or more of the preceding group
+# The {,m} matches 0 to m of the preceding group
+The {n,m} matches at least n and at most m of the preceding group
+(group){n,m}
 ```
 
 ### Greedy and Non-greedy Matching
 Python's regexes are _greedy_ by default, which means that in ambiguous situations they will match the longest string possible.     
-The _non-greedy or lazy_ version of the braces, which matches the shortest string possible, has the closing brace followed by a question mark.
+The _non-greedy or lazy_ version of the braces, which matches the shortest string possible, has the closing brace followed by a ? question mark.
 ```Python
-# Non-greedy forms of the braces
-(group){min_num, max_num}?
+{n,m}?
+*?
++?
 ```
 
 ```Python
@@ -586,8 +590,41 @@ The _non-greedy or lazy_ version of the braces, which matches the shortest strin
 The . dot char in a regex is called a _wildcard_ and will match any single char exceptthe newline.
 
 ### Matching with .*
-The .* dot-star matches everything and anything, in a greedy mode.    
-The .*? dot-star-ques_mark matches everything and anything, in a non-greedy fashion.    
+The .* dot-star matches everything and anything (except a newline), in a greedy mode.    
+The .*? dot-star-ques_mark matches everything and anything (except a newline), in a non-greedy fashion.    
+
+### Matching Newlines with .*
+```Python
+>>>myRegex = re.compile('.*', re.DOTALL)
+```
+
+```Python
+re.compile(,re.I)    # or re.IGNORECASE to make your regex case-insensitive
+```
+
+```Python
+myRegex.sub('str_to_replace_any_matches', 'str_for_regex')
+
+>>> secretRegex = re.compile(r'Agent \w+')
+>>> secretRegex.sub('CENSORED', 'Agent Alice said hi to Agent Carol.')
+'CENSORED said hi to CENSORED.'
+
+>>> secretRegex = re.compile(r'Agent (\w)\w*')
+>>> secretRegex.sub(r'\1****', 'Agent Alice said hi to Agent Carol.')
+'A**** said hi to C****.'
+```
+
+```Python
+# re.compile() function ignores whitespace and comments inside the regex string
+myRegex = re.compile(r'''(
+  (\d)?    # comment_1st
+  (\s)     # comment_2nd
+  )''', re.VERBOSE)
+```
+
+```Python
+>>> myRegex = re.compile('my_str', re.IGNORECASE | re.DOTALL | re.VERBOSE)
+```
 
 ## 08 - Input Validation    
 ## 09 - Reading and Writing Files
