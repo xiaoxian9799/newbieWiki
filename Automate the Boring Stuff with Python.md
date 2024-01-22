@@ -816,6 +816,17 @@ Microsoft Excel and Google Sheets
 7. Get a `Cell` object
 8. Read the `Cell` object's `value` attribute
 
+### Writing Excel Documents
+- Creating and saving Excel documents
+- Creating and removing sheets
+- Writing values to cells
+- Setting the font style of cells
+- Adding formulas to cells
+- Adjusting rows and columns (setting row height and column width)
+- Merging and unmerging cells
+- Freezing panes
+- Creating charts using the data in a sheet's cells
+
 ## 14 - Working with Google Spreadsheets
 ## 15 - Working with PDF and Word Documents
 ## 16 - Working with CSV Files and JSON Data
