@@ -17,7 +17,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] <!-- 20240122 -->[09 - Reading and Writing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#09---reading-and-writing-files)
 - [X] <!-- 20240122 -->[10 - Organizing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#10---organizing-files)
 - [X] <!-- 20240122 -->[11 - Debugging](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#11---debugging)
-- [ ] [12 - Web Scraping](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#12---web-scraping)
+- [X] <!-- 20240122 -->[12 - Web Scraping](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#12---web-scraping)
 - [ ] [13 - Working with Excel Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#13---working-with-excel-spreadsheets)
 - [ ] [14 - Working with Google Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#14---working-with-google-spreadsheets)
 - [ ] [15 - Working with PDF and Word Documents](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
@@ -777,6 +777,25 @@ Step Over = Step In -> Step Out
 _Breakpoints_ can be set on a specific line of code and forces the debugger to pause whenever the program execution reaches that line.    
 
 ## 12 - Web Scraping
+
+| | | |
+| --- | --- | --- |
+| `requests` module | download files from the web without having to worry about issues such as network errors, connection problems, and data compression |
+| `requests.get()` method | download a web page |
+| `raise_for_status()` method | raise an exception if there was an error downloading the file and will do nothing if the download succeeded |
+| `open( , 'wb')` function ... `write()` method | open the file in _write binary_ mode and write the binary data (in order to maintain the _Unicode encoding_ of the text |
+
+### HTML (Hypertext Markup Language)
+`BeautifulSoup` module
+
+The `selenium` module lets Python directly control the browser by programmatically clicking links and filling in login information.
+- Starting a browser
+- Finding elements on the page
+- Clicking the page
+- Filling out and submitting forms
+- Sending special keys
+- Clicking browser buttons
+
 ## 13 - Working with Excel Spreadsheets
 ## 14 - Working with Google Spreadsheets
 ## 15 - Working with PDF and Word Documents
