@@ -32,11 +32,9 @@ Reference: https://automatetheboringstuff.com/
 - The _interactive shell_ is good for _running or executing_ Python _instructions_ one at a time (by using >>> _prompt_), whereas _file editor_ is good to write instructions for the entire Python programs.
 - Both _compiler_ and _interpreter_ translate _source code_ (that adhere to _syntax rules_) into machine code. Compiler translates code at once before the program runs, whereas interpreter translates code line-by-line as the program runs.    
 - Writing programs involves breaking down a problem into individual, detailed steps.     
-  
-_debugging_    
-
+    
 _built-in functions_    
-_standard library_    
+_standard library_   
 A _module_ is a Python program that contains a related group of functions that can be embedded in your programs.    
 
 ```Python
