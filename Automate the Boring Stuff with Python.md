@@ -685,19 +685,33 @@ Path concatenation = `/`
 | file | Stem or base name |
 | ext | Suffix or extension |
 
+| | |
+| --- | --- |
 | os.listdir(p) | returns a list of filename strings for each file in the path argument |
 | p.glob(' ') | returns a list of filename strings for each file according to a _glob pattern_ (regex) |
 | p.exists() | returns True if the path exists |
 | p.is_file() | returns True if the path exists and is a file |
 | p.is_dir() | returns True if the path exists and is a directory |
 
-Plaintext files: text files (.txt), Python script files (.py)
+Plaintext files: text files (.txt), Python script files (.py)    
 Binary files: All file types other than plaintext files: word processing docs, PDFs, images, spreadsheets, and executable programs
 
 ```Python
+>>> file_obj = open(p, 'r')    # read mode
+>>> file_content = file_obj.read()
+>>> file_content = file_obj.readlines()
 
+>>> file_obj = open(p, 'w')    # write mode: overwrites the exisiting file and starts from scratch, if the filename does not exist, creates a new, blank file
+>>> file_obj = open(p, 'a')    # append mode: appends text to the end of the existing file, if the filename does not exist, creates a new, blank file
+>>> file_obj.write('')
+
+>>> file_obj.close()
 ```
 
+Saving variables with 
+- _shelve_ module
+- pprint.pformat() function
+  
 ## 10 - Organizing Files
 ## 11 - Debugging
 ## 12 - Web Scraping
