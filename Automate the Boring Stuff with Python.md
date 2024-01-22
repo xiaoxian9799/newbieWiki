@@ -640,6 +640,64 @@ myRegex = re.compile(r'''(
 - inputCustom()
     
 ## 09 - Reading and Writing Files
+
+Filename    
+Path    
+File's extension = file's type    
+Folders or directories (folder is the more modern name for directory)    
+
+Root folder    
+Volumes = ex. DVD drive or USB flash drive    
+
+Current working directory or cwd    
+Home directory or home folder    
+
+Absolute path: always begins with the root folder    
+Relative path: relative to the program's cwd        
+. dot: shorthand for "this directory"    
+.. dot-dot: shorthand for "the parent folder"    
+
+| OS | Windows | macOS | Linux |
+| --- | :---: | :---: | :---: |
+| Path Separator | \ | / | / |
+
+Path concatenation = `/`
+
+```Python
+>>> from pathlib import Path
+# Path() will return a string with a file path using the correct path separators
+
+>>> import os
+>>> Path.cwd()              # get cwd
+>>> os.chdir(p)        # change cwd
+
+>>> os.makedirs(p)     # create new folders or directories
+# os.makedirs() will create any necessary intermediate folders in order to ensure that the full path exists
+>>> Path(p).mkdir()    # make a directory from a Path object
+```
+
+| C:\Users\folder\file.ext | | |
+| --- | --- | --- |
+| C: | Drive | storage device |
+| C:\ | Anchor | root folder of the filesystem |
+| \Users\folder\ | Parent | folder that contains the file |
+| file.ext | Name |
+| file | Stem or base name |
+| ext | Suffix or extension |
+
+| os.listdir(p) | returns a list of filename strings for each file in the path argument |
+| p.glob(' ') | returns a list of filename strings for each file according to a _glob pattern_ (regex) |
+| p.exists() | returns True if the path exists |
+| p.is_file() | returns True if the path exists and is a file |
+| p.is_dir() | returns True if the path exists and is a directory |
+
+Plaintext files: text files (.txt), Python script files (.py)
+Binary files: All file types other than plaintext files: word processing docs, PDFs, images, spreadsheets, and executable programs
+
+```Python
+
+```
+
 ## 10 - Organizing Files
 ## 11 - Debugging
 ## 12 - Web Scraping
