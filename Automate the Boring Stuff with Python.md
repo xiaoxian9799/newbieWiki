@@ -805,8 +805,6 @@ Microsoft Excel and Google Sheets
 - The sheet the user is currently viewing (or last viewed before closing Excel) is called the _active sheet_.
 - _columns_, _rows_, _cell_
 
-`openpyxl` module
-
 1. Import the `openpyxl` module
 2. Call the `openpyxl.load_workbook()` function
 3. Get a `Workbook` object
