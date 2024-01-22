@@ -16,7 +16,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] <!-- 20240119 -->[08 - Input Validation](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#08---input-validation)    
 - [X] <!-- 20240122 -->[09 - Reading and Writing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#09---reading-and-writing-files)
 - [X] <!-- 20240122 -->[10 - Organizing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#10---organizing-files)
-- [ ] [11 - Debugging](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#11---debugging)
+- [X] <!-- 20240122 -->[11 - Debugging](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#11---debugging)
 - [ ] [12 - Web Scraping](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#12---web-scraping)
 - [ ] [13 - Working with Excel Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#13---working-with-excel-spreadsheets)
 - [ ] [14 - Working with Google Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#14---working-with-google-spreadsheets)
@@ -749,7 +749,34 @@ except Exception as err:
 
 When Python encounters an error, it produces a treasure trove of error information called _traceback_.    
 The traceback includes the error message, the line number of the line that caused the error, and the sequence of the function calls that led to the error.    
-This sequence of calls is called the _call stack_.
+This sequence of calls is called the _call stack_.    
+
+An _assertion_ is a sanity check to make sure your code isn't doing something obviously wrong. If an assert fails, your program should crash.    
+Assertions are for programmer errors, not user errors.
+```Python
+assert condition, 'helpful_error_message'
+```
+
+`logging` module displays log messages in your screen as your program runs. Log messages are intended for programmers, not the users.
+
+Logging levels: DEBUG, INFO, WARNING, ERROR, CRITICAL
+`logging.disable()` function suppresses all log messages    
+`logging.basicConfig()` function writes the log messages to a text file    
+
+### Debugger
+_Debugger_ allows you to execute your program one line at a time to track down bugs.    
+
+| | | |
+| --- | --- | --- |
+| Continue | executes normally until it terminates or reaches a breakpoint |
+| Step In | executes the next line of code and then pause again | step into the function and jump to the first line of code of that function |
+| Step Over | executes the next line of code and then pause again | step over the function and executes lines of code at full speed until it returns from the current function|
+| Step Out | executes lines of code at full speed until it returns from the current function |
+| Stop | stops debugging entirely and not bother to continue executing the rest of the program |
+
+Step Over = Step In -> Step Out    
+
+_Breakpoints_ can be set on a specific line of code and forces the debugger to pause whenever the program execution reaches that line.    
 
 ## 12 - Web Scraping
 ## 13 - Working with Excel Spreadsheets
