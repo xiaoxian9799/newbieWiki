@@ -723,11 +723,10 @@ Saving variables with
 | delete a file | `os.unlink(path)` |
 | delete a folder (provided that the folder must be empty) | `os.rmdir(path)` |
 
-`send2trash.send2trash() function deletes files and folders by sending them to your computer's trash or recycle bin instead of permanently deleting them.    
+`send2trash.send2trash()` function deletes files and folders by sending them to your computer's trash or recycle bin instead of permanently deleting them.    
 `os.walk()` returns lists of strings (foldername, subfolders, and filenames)
 
 archive file    
-open or extract ZIP files    
 
 - Reading ZIP files `zipfile.ZipFile()`
 - Extracting (opening) from ZIP files `extractall()` or `extract()`
