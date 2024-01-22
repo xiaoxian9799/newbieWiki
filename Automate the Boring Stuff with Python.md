@@ -807,6 +807,15 @@ Microsoft Excel and Google Sheets
 
 `openpyxl` module
 
+1. Import the `openpyxl` module
+2. Call the `openpyxl.load_workbook()` function
+3. Get a `Workbook` object
+4. Use the `active` or `sheetnames` attributes
+5. Get a `Worksheet` object
+6. Use indexing or the `cell()` sheet method with `row` and `column` keyword arguments
+7. Get a `Cell` object
+8. Read the `Cell` object's `value` attribute
+
 ## 14 - Working with Google Spreadsheets
 ## 15 - Working with PDF and Word Documents
 ## 16 - Working with CSV Files and JSON Data
