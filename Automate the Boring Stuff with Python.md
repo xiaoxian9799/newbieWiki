@@ -797,6 +797,16 @@ The `selenium` module lets Python directly control the browser by programmatical
 - Clicking browser buttons
 
 ## 13 - Working with Excel Spreadsheets
+Microsoft Excel and Google Sheets        
+
+- An Excel spreadsheet document is called a _workbook_.
+- A single workbook is saved in a file with the _.xlsx_ extension.
+- Each workbook can contain multiple _sheets or worksheets_.
+- The sheet the user is currently viewing (or last viewed before closing Excel) is called the _active sheet_.
+- _columns_, _rows_, _cell_
+
+`openpyxl` module
+
 ## 14 - Working with Google Spreadsheets
 ## 15 - Working with PDF and Word Documents
 ## 16 - Working with CSV Files and JSON Data
