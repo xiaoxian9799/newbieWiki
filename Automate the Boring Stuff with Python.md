@@ -15,7 +15,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] <!-- 20240119 -->[07 - Pattern Matching with RegEx](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#07---pattern-matching-with-regex)    
 - [X] <!-- 20240119 -->[08 - Input Validation](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#08---input-validation)    
 - [X] <!-- 20240122 -->[09 - Reading and Writing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#09---reading-and-writing-files)
-- [ ] [10 - Organizing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#10---organizing-files)
+- [X] <!-- 20240122 -->[10 - Organizing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#10---organizing-files)
 - [ ] [11 - Debugging](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#11---debugging)
 - [ ] [12 - Web Scraping](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#12---web-scraping)
 - [ ] [13 - Working with Excel Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#13---working-with-excel-spreadsheets)
@@ -713,6 +713,26 @@ Saving variables with
 - pprint.pformat() function
   
 ## 10 - Organizing Files
+
+| `shutil` or shell utilities | copy, move, rename, and delete files or folders |
+| --- | --- |
+| copy a file | `shutil.copy(source, destination)` |
+| copy an entire folder and every folder and file contained in it | `shutil.copytree(source, destination)` |
+| move or rename a file or folder | `shutil.move(source, destination)` |
+| delete a folder and all of its contents | `shutil.rmtree(path)` |
+| delete a file | `os.unlink(path)` |
+| delete a folder (provided that the folder must be empty) | `os.rmdir(path)` |
+
+`send2trash.send2trash() function deletes files and folders by sending them to your computer's trash or recycle bin instead of permanently deleting them.    
+`os.walk()` returns lists of strings (foldername, subfolders, and filenames)
+
+archive file    
+open or extract ZIP files    
+
+- Reading ZIP files `zipfile.ZipFile()`
+- Extracting (opening) from ZIP files `extractall()` or `extract()`
+- Creating and Adding to ZIP files `zipfile.ZipFile( , 'w')` or `zipfile.ZipFile( , 'a')`
+
 ## 11 - Debugging
 ## 12 - Web Scraping
 ## 13 - Working with Excel Spreadsheets
