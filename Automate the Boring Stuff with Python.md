@@ -733,6 +733,24 @@ archive file
 - Creating and Adding to ZIP files `zipfile.ZipFile( , 'w')` or `zipfile.ZipFile( , 'a')`
 
 ## 11 - Debugging
+
+### Raising Exceptions
+Python raises an _exception_ whenever it tries to execute invalid code.
+
+```Python
+if condition:
+  raise Exception('helpful_error_message')
+
+try:
+  ...
+except Exception as err:
+  ...
+```
+
+When Python encounters an error, it produces a treasure trove of error information called _traceback_.    
+The traceback includes the error message, the line number of the line that caused the error, and the sequence of the function calls that led to the error.    
+This sequence of calls is called the _call stack_.
+
 ## 12 - Web Scraping
 ## 13 - Working with Excel Spreadsheets
 ## 14 - Working with Google Spreadsheets
