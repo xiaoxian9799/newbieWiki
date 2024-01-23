@@ -18,7 +18,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] <!-- 20240122 -->[10 - Organizing Files](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#10---organizing-files)
 - [X] <!-- 20240122 -->[11 - Debugging](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#11---debugging)
 - [X] <!-- 20240122 -->[12 - Web Scraping](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#12---web-scraping)
-- [ ] [13 - Working with Excel Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#13---working-with-excel-spreadsheets)
+- [X] <!-- 20240122 -->[13 - Working with Excel Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#13---working-with-excel-spreadsheets)
 - [ ] [14 - Working with Google Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#14---working-with-google-spreadsheets)
 - [ ] [15 - Working with PDF and Word Documents](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
 - [ ] [16 - Working with CSV Files and JSON Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
