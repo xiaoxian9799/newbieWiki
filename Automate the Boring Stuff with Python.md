@@ -19,8 +19,8 @@ Reference: https://automatetheboringstuff.com/
 - [X] <!-- 20240122 -->[11 - Debugging](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#11---debugging)
 - [X] <!-- 20240122 -->[12 - Web Scraping](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#12---web-scraping)
 - [X] <!-- 20240122 -->[13 - Working with Excel Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#13---working-with-excel-spreadsheets)
-- [ ] [14 - Working with Google Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#14---working-with-google-spreadsheets)
-- [ ] [15 - Working with PDF and Word Documents](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
+- [X] <!-- 20240124 -->[14 - Working with Google Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#14---working-with-google-spreadsheets)
+- [X] <!-- 20240124 -->[15 - Working with PDF and Word Documents](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
 - [ ] [16 - Working with CSV Files and JSON Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
 - [ ] [17 - Keeping Time, Scheduling Tasks, and Launching Programs](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#17---keeping-time-scheduling-tasks-and-launching-programs)
 - [ ] [18 - Sending Email and Text Messages](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#18---sending-email-and-text-messages)
@@ -826,7 +826,34 @@ Microsoft Excel and Google Sheets
 - Creating charts using the data in a sheet's cells
 
 ## 14 - Working with Google Spreadsheets
+
+- Obtaining Credentials and Token Files
+- API
+
 ## 15 - Working with PDF and Word Documents
+- PDF (Portable Document Format) .pdf and Word documents are binary files.
+
+### PDF
+- Extracting Text from PDFs
+- Decrypting PDFs (some PDF documents have an encryption feature that will keep them from being read until whoever is opening the document provides a password)
+- Creating PDFs
+- Copying Pages
+- Rotating Pages
+- Overlaying Pages (with a logo, timestamp, or watermark)
+- Encrypting PDFs
+- Creating PDFs from Word Documents
+
+### Word Document
+- Reading Word Documents
+- Getting the Full Text from a .docx File
+- Styling Paragraph
+- Creating Word Documents with Nondefault Styles
+- Run Attributes (text)
+- Writing Word Documents
+- Adding Headings
+- Adding Line and Page Breaks
+- Adding Pictures
+
 ## 16 - Working with CSV Files and JSON Data
 ## 17 - Keeping Time, Scheduling Tasks, and Launching Programs
 ## 18 - Sending Email and Text Messages
