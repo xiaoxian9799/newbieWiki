@@ -21,7 +21,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] <!-- 20240122 -->[13 - Working with Excel Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#13---working-with-excel-spreadsheets)
 - [X] <!-- 20240124 -->[14 - Working with Google Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#14---working-with-google-spreadsheets)
 - [X] <!-- 20240124 -->[15 - Working with PDF and Word Documents](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
-- [ ] [16 - Working with CSV Files and JSON Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
+- [X] <!-- 20240129 -->[16 - Working with CSV Files and JSON Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
 - [ ] [17 - Keeping Time, Scheduling Tasks, and Launching Programs](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#17---keeping-time-scheduling-tasks-and-launching-programs)
 - [ ] [18 - Sending Email and Text Messages](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#18---sending-email-and-text-messages)
 - [ ] [19 - Manipulating Images](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#19---manipulating-images)
@@ -828,7 +828,7 @@ Microsoft Excel and Google Sheets
 ## 14 - Working with Google Spreadsheets
 
 - Obtaining Credentials and Token Files
-- API
+- API (Application Programming Interface)
 
 ## 15 - Working with PDF and Word Documents
 - PDF (Portable Document Format) .pdf and Word documents are binary files.
@@ -855,6 +855,18 @@ Microsoft Excel and Google Sheets
 - Adding Pictures
 
 ## 16 - Working with CSV Files and JSON Data
+CSV and JSON files are plaintext files.
+
+### CSV ("comma-separated values")
+- Reading Data from `reader` Objects in a `for` Loop
+- The `delimiter` and `lineterminator` Keyword Arguments [default: `,` delimiter and `\n` lineterminator]
+- Write Data to a CSV file with `writer` Objects
+- `DictReader` and `DictWriter` CSV Objects
+
+### JSON (JavaScript Object Notation)
+- Reading JSON with the `loads()` Function
+- Writing JSON with the `dumps()` Function
+
 ## 17 - Keeping Time, Scheduling Tasks, and Launching Programs
 ## 18 - Sending Email and Text Messages
 ## 19 - Manipulating Images
