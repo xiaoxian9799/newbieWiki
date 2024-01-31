@@ -868,6 +868,32 @@ CSV and JSON files are plaintext files.
 - Writing JSON with the `dumps()` Function
 
 ## 17 - Keeping Time, Scheduling Tasks, and Launching Programs
+
+### The `time` Module
+- The `time.time()` Function - returns the number of seconds since the `Unix epoch` (`Unix epoch timestamp`)
+- The `time.ctime()` Function - returns a string decription of the current time
+- The `time.sleep()` Function - to pause your program for a certain number of seconds
+
+### The `datetime` Module
+- The `datetime.datetime.now()` Function - returns a `datetime` object for the current date and time according to your computer's clock (year, month, day, hour, minute, second, and microsecond)
+- The `datetime.datetime.fromtimestamp()` Function - to convert a Unix epoch timestamp to a `datetime` object
+- The `datetime.delta()` Function - represents a time duration (The `total_seconds()` Method)
+- The `strftime()` Method - to convert `datetime` objects into strings (format)
+- The `strptime()` Method - to convert strings into `datetime` objects (parse)
+
+### Multithreading - the `threading` Module
+Multiple threads can cause problems called `concurrency issues`. These issues happen when threads read and write variables at the same time, causing the threads to trip over each other. Concurrency issues can be hard to reproduce consistently, making them hard to debug.
+
+- The `threading.Thread()` Function - to create a `Thread` object
+
+Normally a program terminates when the last line of code in the file has run (or the `sys.exit()` function is called).
+
+### Launching Other Programs from Python - the `subprocess` Module
+- The `subprocess.Popen()` Function - (Process):
+- The `poll()` Method - returns `None` if the process is stil running at the time `poll()` is called, else returns 
+- The `wait()` Method 
+
+
 ## 18 - Sending Email and Text Messages
 ## 19 - Manipulating Images
 ## 20 - Controlling the Keyboard and Mouse with GUI Automation
