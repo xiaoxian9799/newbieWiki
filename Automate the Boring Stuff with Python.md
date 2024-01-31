@@ -22,7 +22,7 @@ Reference: https://automatetheboringstuff.com/
 - [X] <!-- 20240124 -->[14 - Working with Google Spreadsheets](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#14---working-with-google-spreadsheets)
 - [X] <!-- 20240124 -->[15 - Working with PDF and Word Documents](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
 - [X] <!-- 20240129 -->[16 - Working with CSV Files and JSON Data](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#15---working-with-pdf-and-word-documents)
-- [ ] [17 - Keeping Time, Scheduling Tasks, and Launching Programs](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#17---keeping-time-scheduling-tasks-and-launching-programs)
+- [X] <!-- 20240131 -->[17 - Keeping Time, Scheduling Tasks, and Launching Programs](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#17---keeping-time-scheduling-tasks-and-launching-programs)
 - [ ] [18 - Sending Email and Text Messages](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#18---sending-email-and-text-messages)
 - [ ] [19 - Manipulating Images](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#19---manipulating-images)
 - [ ] [20 - Controlling the Keyboard and Mouse with GUI Automation](https://github.com/xiaoxian9799/newbieWiki/blob/main/Automate%20the%20Boring%20Stuff%20with%20Python.md#20---controlling-the-keyboard-and-mouse-with-gui-automation)
@@ -889,10 +889,21 @@ Multiple threads can cause problems called `concurrency issues`. These issues ha
 Normally a program terminates when the last line of code in the file has run (or the `sys.exit()` function is called).
 
 ### Launching Other Programs from Python - the `subprocess` Module
-- The `subprocess.Popen()` Function - (Process):
-- The `poll()` Method - returns `None` if the process is stil running at the time `poll()` is called, else returns 
-- The `wait()` Method 
+- The `subprocess.Popen()` Function - (Process)
+    - The `poll()` Method - returns `None` if the process is stil running at the time `poll()` is called, else returns the process's integer `exit code` if the program has terminated
+    - The `wait()` Method - block until the launced process has terminated
 
+An exit code is used to indicate whether the process terminated without errors (an exit code of 0) or whether an error caused the process to terminate (a nonzero exit code).
+
+- Running Other Python Scripts
+
+### Task Scheduler, launchd, and cron
+- Windows: Task Scheduler
+- macOS: launchd
+- Linux: cron
+
+### Opening Websites
+- The `webbrowser.open()` Function
 
 ## 18 - Sending Email and Text Messages
 ## 19 - Manipulating Images
